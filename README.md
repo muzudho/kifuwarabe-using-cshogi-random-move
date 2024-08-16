@@ -27,6 +27,19 @@ pip install cshogi
 python main.py
 ```
 
+### トラブルシューティング
+
+```shell
+Traceback (most recent call last):
+  File "C:\Users\muzud\OneDrive\ドキュメント\GitHub\kifuwarabe-using-cshogi-trainer\main.py", line 1, in <module>
+    import cshogi
+  File "C:\Users\muzud\AppData\Local\Programs\Python\Python312\Lib\site-packages\cshogi\__init__.py", line 1, in <module>
+    from ._cshogi import *
+ImportError: DLL load failed while importing _cshogi: 指定されたモジュールが見つかりません。
+```
+
+👆　cshogi をインストールしたにも関わらず上記のエラーが出る場合は、パソコンに Python のインタープリターが複数インストールされていて、別のインタープリターを見ている可能性があります。Python のインタープリターの設定を見直してください。  
+VSCode であれば、 `*.py` ファイルを開き、画面の右下の Python のバージョンをクリックしてください  
 
 ## 将棋所にエンジン登録する方法
 
